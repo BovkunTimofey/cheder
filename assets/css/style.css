@@ -1,0 +1,366 @@
+@font-face {
+  font-family: aaa;
+  src: url(../../assets/fonts/1.otf);
+}
+
+@font-face {
+  font-family: bbb;
+  src: url(../../assets/fonts/2.otf);
+}
+
+@font-face {
+  font-family: ccc;
+  src: url(../../assets/fonts/3.ttf);
+}
+
+@font-face {
+  font-family: ddd;
+  src: url(../../assets/fonts/4.ttf);
+}
+
+@font-face {
+  font-family: ContentTitles;
+  src: url(../../assets/fonts/5.ttf);
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.menu, .site-content, .footer{
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.static-header{
+	background-color: #fff;
+	top: 0;
+	height: 150px;
+	width: 100%;
+	font-size: 0.8em;
+	margin-left: 0;
+	margin-right: 0;
+	min-width: 900px;
+	position: fixed;
+	transition: 0.3s;
+	z-index: 10;
+}
+
+.static-header.display{
+	display: none;
+}
+
+.static-header.out{
+	transform: translateY(-63%);
+}
+
+.static-header.unvisible{
+	transform: translateY(-110%);
+}
+
+.logo{
+	background-color: #F0F0F0;
+	height: 94px;
+	width: 100vw;
+	padding-bottom: 20px;
+}
+
+.logo-div{
+	display: inline-block;
+	height: 100%;
+	padding-top: 11px;
+	padding-left: 30px;
+}
+
+.logo-img{
+	height: 70px;
+	margin-right: 20px;
+}
+
+.menubar{
+	width: 100vw;
+	height: 38%;
+	padding-right: 45px;
+	box-shadow: 1px 0 5px #9A8BB6;
+}
+
+ul.menu{
+	padding-top: 12px;
+	float: left;
+}
+
+ul.menu li{
+	float: left;
+	padding: 0 0 0px 9px;
+	list-style: none;
+	margin: 1px 2px 0 0;
+}
+
+ul.menu li a{
+	font: bold 140% 'trebuchet ms', sans-serif;
+	display: block;
+	height: 20px;
+	padding: 4px 35px 5px 28px;
+	color: #809EB3;
+	text-decoration: none;
+}
+
+ul.menu li.selected a{
+	color:  #1AC126;
+}
+
+ul.menu li a:hover{
+	color: #0A9CFF;
+	text-shadow: 1.5px 1.5px 2px #4BB4FB;
+}
+
+ul.transition li a{
+	transition: 0.2s;
+}
+
+.menu-button {
+	float: right;
+	height: 100%;
+	text-decoration: none;
+	outline: none;
+	display: inline-block;
+	color: white;
+	padding: 22px 30px;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	background-image: linear-gradient(to right, #3f51b1 0%, #5a55ae 13%, #7b5fac 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271 75%, #f3a469 87%, #f7c978 100%);
+	background-size: 200% auto;
+	box-shadow: 0 0 20px rgba(0,0,0,.1);
+	transition: .5s;
+}
+
+.menu-button:hover {
+	background-position: right center;
+}
+
+.main-header{
+	height: 837px;
+	width: 100vw;
+    background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+.main-header-div{
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+    min-width: 320px;
+    max-width: 1300px;
+    position: relative;
+    padding-right: 25px;
+    padding-left: 25px;
+}
+
+.header-logo{
+	height: 15%;
+}
+
+.header-div{
+	display: inline-block;
+	height: 100%;
+	padding-top: 11px;
+	padding-left: 5px;
+}
+
+.header-menubar{
+	display: inline-block;
+	height: 100%;
+	float: right;
+}
+
+ul.header-menu{
+	width: 100%;
+	padding-top: 9px;
+	float: right;
+}
+
+ul.header-menu li{
+	float: left;
+	list-style: none;
+	margin: 1px 2px 0 0;
+	padding-top: 16px;
+}
+
+ul.header-menu li a{
+	font: bold 120% 'trebuchet ms', sans-serif;
+	display: block;
+	height: 20px;
+	padding: 5px 35px 5px 28px;
+	color: #F2F2F2;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+ul.header-menu li a.no-padding-right{
+	padding-right: 5px;
+}
+
+ul.header-menu li.selected a{
+	color:  #17DD13;
+}
+
+ul.header-menu li a:hover{
+	color: #CFCFCF;
+}
+
+.header-img{
+	background: url(../../assets/img/header-img.png) center no-repeat;
+	background-size: 442px 690px;
+	width: 442px;
+    height: 690px;
+    margin-left: 30px;
+    display: block;
+    flex-shrink: 0;
+}
+
+.hero-header{
+	width: 100%;
+	display: flex;
+    padding-right: 30px;
+}
+
+.action{
+    max-width: 550px;
+	margin-right: auto;
+    margin-top: 30px;
+    padding-left: 40px;
+}
+
+.action-title{
+	font-family: Roboto, sans-serif;
+	font-size: 23px;
+    line-height: 45px;
+    text-align: left;
+    color: #F7F7F7;
+    margin-bottom: 30px;
+}
+
+.action-text{
+	max-width: 400px;
+	margin-right: 150px;
+	font-family: Roboto, sans-serif;
+	font-size: 20px;
+    line-height: 25px;
+    text-align: left;
+    color: #E3E3E3;
+    margin-bottom: 15px;
+}
+
+.action-timer {
+    font-family: Roboto, sans-serif;
+    color: #4f455f;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 25px;
+}
+
+.countdown-number {
+    padding: 10px;
+    border-radius: 3px;
+    display: inline-block;
+    align-items: center;
+	z-index: 2;
+}
+
+.countdown-time {
+    padding: 20px;
+    border-radius: 10px;
+    background: #fff;
+    display: inline-block;
+}
+
+.countdown-text {
+	color: #fff;
+    display: block;
+    padding-top: 5px;
+    font-size: 16px;
+}
+
+.no-padding-left{
+	padding-left: 0;
+}
+
+.countdown-split-div{
+	height: 100%;
+	transform: translateY(-255%);
+	padding-right: 80px;
+	padding-left: 70px;
+}
+
+.countdown-split{
+ 	color: #fff;
+ 	font-size: 30px;
+ }
+
+ .margin-left-right{
+ 	margin: 0 79px;
+ }
+
+ .action-button{
+    text-decoration: none;
+    outline: none;
+    display: inline-block;
+    width: 300px;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 45px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 600;
+    color: #524f4e;
+    background: #FFB933;
+    box-shadow: 0 8px 15px rgba(0,0,0,.1);
+    transition: .3s;
+    transform: translateY(-10px);
+}
+
+.action-button:hover{
+    background: #2EE59D;
+    box-shadow: 0 15px 20px rgba(46,229,157,.4);
+    color: white;
+    transform: translateY(-17px);
+}
+
+.site-content{
+	height: 1000vh;
+	width: 100vw;
+	background-color: #E3E3E3;
+	padding: 0 70px;
+}
+
+.mnemonika{
+	height: 200vh;
+	background-color: #fff;
+	box-shadow: 0 0 2px #A1A1A1;
+	border-radius: 20px;
+	transform: translateY(-120px);
+	padding-top: 40px;
+}
+
+.skorochtenie{
+	height: 200vh;
+	background-color: #fff;
+	box-shadow: 0 0 2px #A1A1A1;
+	border-radius: 20px;
+	padding-bottom: 20px;
+}
+
+.mnemonika-title{
+	font-family: ContentTitles;
+	font-size: 65px;
+    line-height: 100px;
+    text-align: center;
+    color: #FF6200;
+    margin-bottom: 30px;
+}
